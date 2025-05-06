@@ -22,11 +22,11 @@
 
 function expressionMatter(a, b, c) {
 	const expressions = [
-		a * (b + c),    // Вариант 1: a * (b + c)
-		a * b * c,      // Вариант 2: a * b * c
-		a + b * c,      // Вариант 3: a + b * c
-		(a + b) * c,    // Вариант 4: (a + b) * c
-		a + b + c       // Вариант 5: a + b + c
+		a * (b + c),
+		a * b * c,
+		a + b * c,
+		(a + b) * c,
+		a + b + c
 	];
 
 	return Math.max(...expressions);
