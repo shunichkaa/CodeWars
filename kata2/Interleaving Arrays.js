@@ -8,12 +8,12 @@
 // interleave([]) === []
 
 function interleave(...arrays) {
+	const maxLength = Math.max(...arrays.map(arr => arr.length));
 	const result = [];
-	const length = Math.max(...arrays.map(array => array.length));
 
-	for (let i = 0; i < length; i++) {
-		for (let array of arrays) {
-			result.push(i < array.length ? array[i] : null);
+	for (let i = 0; i < maxLength; i++) {
+		for (let arr of arrays) {
+			result.push(i < arr.length ? arr[i] : null);
 		}
 	}
 
